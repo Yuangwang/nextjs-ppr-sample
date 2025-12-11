@@ -1,4 +1,3 @@
-"use strict";
 var __create = Object.create;
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
@@ -22,7 +21,7 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
   mod
 ));
 
-// ../firebase-framework-tools/packages/@apphosting/adapter-nextjs/src/bin/serve.ts
+// node_modules/wei-nextjs-adapter-test/dist/bin/serve.js
 var import_http = require("http");
 var import_url = require("url");
 var import_path = __toESM(require("path"), 1);
@@ -31,20 +30,19 @@ process.env["NODE_ENV"] = "production";
 process.env["NEXT_PRIVATE_MINIMAL_MODE"] = "1";
 console.log("\u{1F680} Starting Native Adapter...");
 async function start() {
-  const currentDir = process.cwd();
+  const serverDir = __dirname;
   try {
-    const configPath = import_path.default.join(currentDir, "firebase-next-config.json");
+    const configPath = import_path.default.join(serverDir, "firebase-next-config.json");
     console.log(`\u{1F4E5} Loading config from ${configPath}`);
     const rawConfig = import_fs.default.readFileSync(configPath, "utf-8");
     const buildContext = JSON.parse(rawConfig);
-    const nextPath = require.resolve("next/dist/server/next-server", { paths: [currentDir] });
+    const nextPath = require.resolve("next/dist/server/next-server", { paths: [serverDir] });
     const NextServer = require(nextPath).default;
     const server = new NextServer({
-      dir: currentDir,
+      dir: serverDir,
       hostname: "0.0.0.0",
       port: parseInt(process.env.PORT || "8080"),
       conf: buildContext.config
-      // <--- Pass the simple JSON object
     });
     console.log("\u23F3 Preparing server...");
     const requestHandler = server.getRequestHandler();

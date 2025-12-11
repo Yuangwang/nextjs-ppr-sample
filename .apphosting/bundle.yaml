@@ -1,0 +1,16 @@
+version: v1
+runConfig:
+  runCommand: node .apphosting/adapter-server.js
+  concurrency: 80
+  cpu: 1
+  memoryMiB: 512
+  minInstances: 0
+  maxInstances: 100
+metadata:
+  adapterPackageName: wei-nextjs-adapter-test
+  adapterVersion: 15.0.3
+  framework: nextjs
+outputFiles:
+  serverApp:
+    include:
+      - .apphosting

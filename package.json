@@ -12,10 +12,12 @@
   "dependencies": {
     "next": "16.0.7",
     "react": "19.2.1",
+    "esbuild": "^0.25.0", 
+    "fs-extra": "^11.0.0",   
     "react-dom": "19.2.1"
   },
   "devDependencies": {
-    "wei-nextjs-adapter-test": "15.0.0",
+    "wei-nextjs-adapter-test": "15.0.10",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
