@@ -17,7 +17,7 @@
     "react-dom": "19.2.1"
   },
   "devDependencies": {
-    "wei-nextjs-adapter-test": "15.0.10",
+    "wei-nextjs-adapter-test": "15.0.12",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
