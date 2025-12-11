@@ -4,22 +4,24 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "apphosting:build": "apphosting-adapter-nextjs-build",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
-    "next": "16.1.0-canary.12",
+    "next": "16.0.7",
     "react": "19.2.1",
     "react-dom": "19.2.1"
   },
   "devDependencies": {
+    "wei-nextjs-adapter-test": "15.0.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "16.1.0-canary.12",
+    "eslint-config-next": "16.0.7",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
