@@ -9,6 +9,7 @@ runConfig:
 metadata:
   adapterPackageName: wei-nextjs-adapter-test
   adapterVersion: 15.0.3
+  frameworkVersion: 16.0.1
   framework: nextjs
 outputFiles:
   serverApp:
