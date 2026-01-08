@@ -1,0 +1,18 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.app
+    ports:
+      - "8080:8080" # We expose 8080 so we can hit Envoy
+    environment:
+      - PORT=3000
+
+  envoy:
+    build:
+      context: ./envoy
+      dockerfile: Dockerfile
+    network_mode: "service:app" # <--- The magic sauce
+    depends_on:
+      - app

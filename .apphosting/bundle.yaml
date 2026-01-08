@@ -1,17 +1,12 @@
 version: v1
 runConfig:
-  runCommand: node .apphosting/adapter-server.js
-  concurrency: 80
-  cpu: 1
-  memoryMiB: 512
-  minInstances: 0
-  maxInstances: 100
+  runCommand: node .next/standalone/adapter/dist/bin/serve.js .next/standalone
 metadata:
-  adapterPackageName: wei-nextjs-adapter-test
-  adapterVersion: 15.0.3
-  frameworkVersion: 16.0.1
+  adapterPackageName: "@apphosting/adapter-nextjs"
+  adapterVersion: 15.0.0
   framework: nextjs
+  frameworkVersion: 16.1.1-canary.18
 outputFiles:
   serverApp:
     include:
-      - .apphosting
+      - .next/standalone

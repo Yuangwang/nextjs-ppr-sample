@@ -1,5 +1,0 @@
-1:"$Sreact.fragment"
-2:"$Sreact.suspense"
-4:I[97367,["/_next/static/chunks/91d2cce913765b41.js"],"OutletBoundary"]
-0:{"buildId":"NZAX5LK3faE_yGmvKeuc2","rsc":["$","$1","c",{"children":[["$","main",null,{"className":"min-h-screen p-12 space-y-8","children":[["$","header",null,{"className":"p-6 bg-gray-100 rounded-lg","children":[["$","h1",null,{"className":"text-3xl font-bold","children":"Partial Prerendering Demo"}],["$","p",null,{"className":"text-gray-600","children":"This header is static. It is pre-generated at build time and served immediately."}]]}],["$","section",null,{"children":[["$","p",null,{"className":"mb-4","children":"Below is a dynamic component wrapped in Suspense:"}],["$","$2",null,{"fallback":["$","div",null,{"className":"p-4 border-2 border-gray-300 border-dashed rounded h-32 flex items-center justify-center bg-gray-50","children":["$","span",null,{"className":"animate-pulse text-gray-400","children":"Loading Cart Data..."}]}],"children":"$L3"}]]}]]}],null,["$","$L4",null,{"children":["$","$2",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":true}
-5:null
