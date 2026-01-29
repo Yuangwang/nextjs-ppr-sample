@@ -2,8 +2,8 @@ version: v1
 runConfig:
   runCommand: node .next/standalone/adapter/dist/bin/serve.js .next/standalone
 metadata:
-  adapterPackageName: "@apphosting/adapter-nextjs"
-  adapterVersion: 15.0.0
+  adapterPackageName: wei-nextjs-adapter-test
+  adapterVersion: 15.0.13
   framework: nextjs
   frameworkVersion: 16.1.1-canary.18
 outputFiles:
