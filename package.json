@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "apphosting:build": "apphosting-adapter-nextjs-build",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "apphosting:build": "apphosting-adapter-nextjs-build" 
   },
   "dependencies": {
     "esbuild": "^0.25.0",
@@ -17,7 +17,6 @@
     "react-dom": "^19.0.0-rc.1"
   },
   "devDependencies": {
-    "@apphosting/adapter-nextjs": "file:../firebase-framework-tools/packages/@apphosting/adapter-nextjs",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
@@ -26,6 +25,6 @@
     "eslint-config-next": "16.0.7",
     "tailwindcss": "^4",
     "typescript": "^5",
-    "wei-nextjs-adapter-test": "file:../firebase-framework-tools/packages/@apphosting/adapter-nextjs"
+    "wei-nextjs-adapter-test": "^15.0.14"
   }
 }

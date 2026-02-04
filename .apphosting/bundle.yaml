@@ -3,9 +3,9 @@ runConfig:
   runCommand: node .next/standalone/adapter/dist/bin/serve.js .next/standalone
 metadata:
   adapterPackageName: wei-nextjs-adapter-test
-  adapterVersion: 15.0.13
+  adapterVersion: 15.0.14
   framework: nextjs
-  frameworkVersion: 16.1.1-canary.18
+  frameworkVersion: 16.1.6
 outputFiles:
   serverApp:
     include:
